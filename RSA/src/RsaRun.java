@@ -16,13 +16,6 @@ public class RsaRun {
         VerUndEntschluesslung chiffre = new VerUndEntschluesslung();
 
         System.out.println("START");
-        System.out.println(" ");
-
-        chiffre.generateKeys();
-        chiffre.verschuesslung();
-        chiffre.decryption();
-
-        System.out.println(" ");
         System.out.println("ENDE");
 
 
