@@ -2,11 +2,13 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class ReadnWrite {
+public class Reader {
 
     public static void main(String[] args) throws IOException {
 
-        FileReader fr = new FileReader("text.txt");
+
+        //kann gelesen werden
+        FileReader fr = new FileReader("RSA/text.txt");
         BufferedReader br = new BufferedReader(fr);
 
         String textInput = "";

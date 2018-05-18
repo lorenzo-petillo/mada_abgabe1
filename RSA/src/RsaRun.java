@@ -46,6 +46,7 @@ public class RsaRun {
 
         // hier wird dann eingelesen und einzeln als char abgespeichert
 
+
         //toDo: String von text.txt lesen lassen
         String text = "ABCabc123!";
         char[] Input = text.toCharArray();
