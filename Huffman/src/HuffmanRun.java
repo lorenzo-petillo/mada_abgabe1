@@ -15,19 +15,19 @@ public class HuffmanRun {
 
         System.out.println("START");
 
-
+        System.out.println("...File wird gelesen..");
         //SHOULD read line to line and then with CharArray put into Array... so far...
-        FileReader fr = new FileReader("Huffman/text.txt");
+        FileReader textFile = new FileReader("Huffman/text.txt");
+
         FileWriter fw = new FileWriter("Huffman/asciiCode.txt");
-        BufferedReader br = new BufferedReader(fr);
+        BufferedReader br = new BufferedReader(textFile);
 
         String textInput = "";
 
         while( (textInput = br.readLine()) != null){
-            //System.out.println(textInput);
+            System.out.println("Das befindet sich im text.txt: "+ textInput);
 
             char[] Input = textInput.toCharArray();
-
 
 
             for (int i = 0; i < Input.length; i++) {
@@ -36,6 +36,7 @@ public class HuffmanRun {
                 String asciiOutput = ":" + (int) Input[i];
 
                 fw.write(asciiOutput);
+                System.out.println("Das befindet sich einzeln im asciiCode.txt: "+ asciiOutput);
 
             }
 
@@ -45,8 +46,12 @@ public class HuffmanRun {
 
         }
 
-
         br.close();
+
+
+
+        System.out.println("... ich habe fertisch...");
+
 
 
 
