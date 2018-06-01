@@ -8,7 +8,7 @@ public class Reader {
 
 
         //kann gelesen werden
-        FileReader fr = new FileReader("RSA/text.txt");
+        FileReader fr = new FileReader("Huffman/text.txt");
         BufferedReader br = new BufferedReader(fr);
 
         String textInput = "";
