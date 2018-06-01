@@ -28,9 +28,11 @@ public class HuffmanRun {
 
             char[] Input = textInput.toCharArray();
 
+
+
             for (int i = 0; i < Input.length; i++) {
 
-                //einzelne Arrays werden von char in ASCII ausgegeben und in String umgewandelt
+                //einzelne Arrays werden von char in ASCII ausgegeben und in "String" umgewandelt
                 String asciiOutput = ":" + (int) Input[i];
 
                 fw.write(asciiOutput);
