@@ -33,7 +33,7 @@ public class HuffmanRun {
             for (int i = 0; i < Input.length; i++) {
 
                 //einzelne Arrays werden von char in ASCII ausgegeben und in "String" umgewandelt
-                String asciiOutput = ":" + (int) Input[i];
+                String asciiOutput = (int) Input[i] + ":";
 
                 fw.write(asciiOutput);
                 System.out.println("Das befindet sich einzeln im asciiCode.txt: "+ asciiOutput);
