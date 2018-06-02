@@ -1,12 +1,10 @@
 package src;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-
 public class Scanner {
 
+    /*
 
+    Alles aufgrund IOException in die Huffman Run klasse verlegt
     String textInput;
 
 
@@ -35,7 +33,7 @@ public class Scanner {
         return textInput;
 
 
-    }
+    }*/
 
 
 }
