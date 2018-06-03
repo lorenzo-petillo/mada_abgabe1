@@ -27,16 +27,19 @@ public class HuffmanRun {
         while( (textInput = br.readLine()) != null){
             System.out.println("Das befindet sich im text.txt: "+ textInput);
 
-            char[] Input = textInput.toCharArray();
+            char[] input = textInput.toCharArray();
 
 
-            for (int i = 0; i < Input.length; i++) {
+            for (int i = 0; i < input.length; i++) {
 
                 //einzelne Arrays werden von char in ASCII ausgegeben und in "String" umgewandelt
-                String asciiOutput = (int) Input[i] + ":";
+                int [] asciiOutputInArray = new int [input.length];
 
-                fw.write(asciiOutput);
-                System.out.println("Das befindet sich einzeln im asciiCode.txt: "+ asciiOutput);
+                asciiOutputInArray [i] = input[i];
+                //String asciiOutput = (int) input[i] + "-";
+
+                fw.write(input[i]+":"+asciiOutputInArray[i]+"-");
+                System.out.print( input[i] + ":" + asciiOutputInArray[i] + "-");
 
             }
 
