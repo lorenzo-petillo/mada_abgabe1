@@ -24,33 +24,39 @@ public class HuffmanRun {
 
         String textInput = "";
 
+        char [] input = new char [textInput.toCharArray().length];
+        int [] asciiOutputInArray = new int[input.length];
+
         while( (textInput = br.readLine()) != null){
             System.out.println("Das befindet sich im text.txt: "+ textInput);
 
-            char[] input = textInput.toCharArray();
+            input = textInput.toCharArray();
 
+            asciiOutputInArray = new int [input.length];
 
             for (int i = 0; i < input.length; i++) {
 
-                //einzelne Arrays werden von char in ASCII ausgegeben und in "String" umgewandelt
-                int [] asciiOutputInArray = new int [input.length];
-
+                //einzelne Arrays werden von char in ASCII ausgegeben und in int umgewandelt
                 asciiOutputInArray [i] = input[i];
                 //String asciiOutput = (int) input[i] + "-";
 
                 fw.write(input[i]+":"+asciiOutputInArray[i]+"-");
                 System.out.print( input[i] + ":" + asciiOutputInArray[i] + "-");
 
-            }
 
+            }
             // ALWAYS CLOSE THINGS OR IT WILL TAKE YOU HOURS!!!
             fw.close();
-
+            System.out.println();
 
         }
-
         br.close();
 
+        System.out.println("jetzt kommen asciiWerte: ");
+
+
+        for(int i=0 ; i<asciiOutputInArray.length; i++)
+            System.out.println(asciiOutputInArray[i]);
 
 
         System.out.println("... ich habe fertisch...");
